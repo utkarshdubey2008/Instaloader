@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Instagram Media</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Instant Save</h1>
+            <div>
+                <a href="index.html" class="px-4 py-2">Home</a>
+                <a href="download.html" class="px-4 py-2">Download</a>
+                <a href="support.html" class="px-4 py-2">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Download Section -->
+    <div class="container mx-auto text-center py-16">
+        <h2 class="text-2xl font-semibold mb-6">Download Instagram Media</h2>
+        <form id="url-form">
+            <input type="url" id="insta-url" class="w-full px-4 py-2 mb-4 text-gray-900 rounded-md" placeholder="Enter Instagram URL" required>
+            <button type="submit" class="w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-md text-white">Download</button>
+        </form>
+        
+        <!-- Loader -->
+        <div id="loader" class="hidden mt-4">
+            <div class="spinner-border animate-spin w-16 h-16 border-t-4 border-white rounded-full mx-auto"></div>
+        </div>
+
+        <!-- Media Section -->
+        <div id="media-container" class="mt-6 hidden">
+            <h3 class="text-xl font-semibold text-center mb-4">Your Media</h3>
+            <div id="media"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-4">
+        <p>Created with ❤️ in India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
