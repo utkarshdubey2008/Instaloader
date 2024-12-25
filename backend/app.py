@@ -26,8 +26,8 @@ def download():
         # If the request is successful, return the video URL
         if response.status_code == 200:
             data = response.json()
-            # Assuming the API response contains a key 'video_url'
-            video_url = data.get('video_url')
+            # Assuming the API response contains a key 'content_url'
+            video_url = data.get('content_url')
             if video_url:
                 return jsonify({"video_url": video_url})
             else:
