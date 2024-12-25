@@ -16,7 +16,12 @@ def download():
 
     try:
         # Call the external API with the Instagram URL
+        print(f"Requesting video for URL: {instagram_url}")
         response = requests.get(f"{API_URL}{instagram_url}")
+
+        # Log the response from the external API
+        print(f"API Response Status: {response.status_code}")
+        print(f"API Response: {response.text}")
 
         # If the request is successful, return the video URL
         if response.status_code == 200:
