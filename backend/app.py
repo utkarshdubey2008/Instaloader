@@ -11,7 +11,7 @@ def download_media():
         return jsonify({"error": "URL is required"}), 400
 
     # Construct the API URL to fetch Instagram post data
-    api_url = f"https://instadl.pikaapis0.workers.dev/?url={url}"
+    api_url = f"https://karma-api2.vercel.app/instadl?url={url}"
 
     try:
         response = requests.get(api_url)
