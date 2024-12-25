@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Downloader</title>
+    <title>Instant Save</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-    <div class="flex justify-center items-center min-h-screen">
-        <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-lg">
-            <h1 class="text-3xl font-bold text-center mb-6">Instagram Video/Photo Downloader</h1>
-            <form id="url-form">
-                <input type="url" id="insta-url" class="w-full px-4 py-2 mb-4 text-gray-900 rounded-md" placeholder="Enter Instagram URL" required>
-                <button type="submit" class="w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-md text-white">Download</button>
-            </form>
-            <div id="media-container" class="mt-6 hidden">
-                <h2 class="text-xl font-semibold text-center mb-4">Download Your Media</h2>
-                <div id="media"></div>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Instant Save</h1>
+            <div>
+                <a href="index.html" class="px-4 py-2">Home</a>
+                <a href="download.html" class="px-4 py-2">Download</a>
+                <a href="support.html" class="px-4 py-2">Support</a>
             </div>
         </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="text-center py-16">
+        <h2 class="text-2xl font-semibold">Welcome to Instant Save</h2>
+        <p class="text-xl mt-4">Download your Instagram videos and images easily.</p>
+        <p class="mt-4 text-sm text-gray-400">Visit us at: <a href="https://instaloader-three.vercel.app" class="text-blue-400">instaloader-three.vercel.app</a></p>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-4">
+        <p>Created with ❤️ in India</p>
+    </footer>
 </body>
 </html>
