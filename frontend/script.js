@@ -4,8 +4,11 @@ document.getElementById("url-form").addEventListener("submit", async function (e
     const url = document.getElementById("insta-url").value;
     const mediaContainer = document.getElementById("media-container");
     const mediaDiv = document.getElementById("media");
+    const loader = document.getElementById("loader");
+    
     mediaContainer.classList.add("hidden");
     mediaDiv.innerHTML = '';
+    loader.classList.remove("hidden");
 
     if (!url) {
         alert("Please enter a valid Instagram URL.");
@@ -35,9 +38,11 @@ document.getElementById("url-form").addEventListener("submit", async function (e
             });
         }
 
+        loader.classList.add("hidden");
         mediaContainer.classList.remove("hidden");
     } catch (error) {
         alert("Error fetching media. Please try again later.");
         console.error(error);
+        loader.classList.add("hidden");
     }
 });
